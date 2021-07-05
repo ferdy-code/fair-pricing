@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F3F6FD;
+}
+
+span {
+  color: #6E62E4;
+}
+
+nav.navbar {
+  padding: 20px 20px 0 20px;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+nav.navbar .navbar-nav .nav-link {
+  color: #697789;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+nav.navbar .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+section.feature {
+  padding-top: 94px;
+}
+
+section.feature .title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 63px;
+  margin-bottom: 12px;
+}
+
+section.feature .desc {
+  font-size: 18px;
+  line-height: 32px;
+  color: #697789;
+  margin: 0;
+}
+
+section.feature .package {
+  position: relative;
+  margin: 70px 0 100px 0;
+}
+
+section.feature .card {
+  border: none;
+  height: 100%;
+  z-index: 10;
+  border-radius: 30px;
+}
+
+section.feature .card .card-body {
+  padding: 30px;
+}
+
+section.feature .card .card-body .package-name {
+  margin-left: 14px;
+}
+
+section.feature .card .card-body .package-name h5 {
+  margin-bottom: 6px;
+}
+
+section.feature .card .card-body .package-name .price {
+  font-size: 28px;
+  font-weight: 500;
+  color: #6E62E4;
+  line-height: 42px;
+  margin: 0;
+}
+
+section.feature .card .card-body .package-name .price::before {
+  content: '$';
+  font-size: 18px;
+  color: #697789;
+  position: relative;
+  top: -12px;
+  margin-right: 3px;
+}
+
+section.feature .card .card-body .package-name .price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #697789;
+  line-height: 21px;
+}
+
+section.feature .card .card-body hr {
+  height: 2px;
+  color: #ECE7E7;
+}
+
+section.feature .card .card-body .package-details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.feature .card .card-body .package-details ul li p {
+  color: #697789;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+section.feature .card .card-body .package-details ul li p span {
+  color: #000;
+  font-weight: 600;
+}
+
+section.feature .card .card-body .package-details ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+section.feature .card .card-body .btn-feature {
+  padding: 13px 55px;
+  background-color: #6E62E4;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 100px;
+  margin-top: 24px;
+}
+
+section.feature .card.main {
+  border-radius: 30px;
+  background: #3A3379;
+  position: relative;
+  z-index: 30;
+}
+
+section.feature .card.main .package-name h5 {
+  color: #fff;
+}
+
+section.feature .card.main .package-name .price {
+  color: #FFBEB2;
+}
+
+section.feature .card.main .package-name .price::before {
+  color: #B2ADE1;
+}
+
+section.feature .card.main .package-name .price span {
+  color: #B2ADE1;
+}
+
+section.feature .card.main hr {
+  color: #564F96;
+  margin: 30px 0;
+}
+
+section.feature .card.main .package-details ul li p {
+  color: #B2ADE1;
+}
+
+section.feature .card.main .package-details ul li p span {
+  color: #FFF;
+}
+
+section.feature .card.main .btn-feature {
+  margin-top: 35px;
+  padding: 17px 88px 18px 88px;
+  color: #000;
+  background-color: #FFBEB2;
+}
+
+@media (min-width: 768px) {
+  nav.navbar {
+    padding: 40px 90px;
+  }
+  section.feature .title {
+    font-size: 42px;
+  }
+  section.feature .card.left {
+    border-radius: 30px 0 0 30px;
+  }
+  section.feature .card.right {
+    border-radius: 0 30px 30px 0;
+  }
+  section.feature .package::before {
+    content: '';
+    position: absolute;
+    z-index: 20;
+    width: 438px;
+    height: 354px;
+    border-radius: 27px;
+    background: #6A7180;
+    opacity: 0.4;
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

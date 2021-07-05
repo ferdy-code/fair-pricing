@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+$primary : #6E62E4;
+$secondary : #697789;
+
+$regular : 400;
+$medium : 500;
+$semiBold : 600;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F6FD;
+}
+
+span {
+    color: $primary;
+}
+
+nav.navbar {
+    padding: 20px 20px 0 20px;
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: $semiBold;
+        line-height: 36px;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $secondary;
+            font-size: 18px;
+            line-height: 27px;
+            &.active {
+                font-weight: $medium;
+            }
+        }
+    }
+}
+
+section.feature {
+    padding-top: 94px;
+    .title {
+        font-size: 36px;
+        font-weight: $semiBold;
+        line-height: 63px;
+        margin-bottom: 12px;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 32px;
+        color: $secondary;
+        margin: 0;
+    }
+
+    .package {
+        position: relative;
+        margin: 70px 0 100px 0;
+    }
+
+    .card {
+        border: none;
+        height: 100%;
+        z-index: 10;
+        border-radius: 30px;
+        .card-body {
+            padding: 30px;
+            .package-name {
+                margin-left: 14px;
+                h5 {
+                    margin-bottom: 6px;
+                }
+                .price {
+                    font-size: 28px;
+                    font-weight: $medium;
+                    color: $primary;
+                    line-height: 42px;
+                    margin: 0;
+                    &::before {
+                        content: '$';
+                        font-size: 18px;
+                        color: $secondary;
+                        position: relative;
+                        top: -12px;
+                        margin-right: 3px;
+                    }
+    
+                    span {
+                        font-size: 14px;
+                        font-weight: $regular;
+                        color: $secondary;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            hr {
+                height: 2px;
+                color: #ECE7E7;
+            }
+
+            .package-details {
+                ul li {
+                    display: flex;
+                    p {
+                        color: $secondary;
+                        margin-bottom: 0;
+                        margin-left: 8px;
+                        span {
+                            color: #000;
+                            font-weight: $semiBold;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .btn-feature {
+                padding: 13px 55px;
+                background-color: $primary;
+                font-weight: $medium;
+                color: #fff;
+                border-radius: 100px;
+                margin-top: 24px;
+            }
+        }
+
+        &.main {
+            border-radius: 30px;
+            background: #3A3379;
+            position: relative;
+            z-index: 30;
+            .package-name {
+                h5 {
+                    color: #fff;
+                }
+                .price {
+                    color: #FFBEB2;
+                    &::before {
+                        color: #B2ADE1;
+                    }
+
+                    span {
+                        color: #B2ADE1;
+                    }
+                }
+            }
+
+            hr {
+                color: #564F96;
+                margin: 30px 0;
+            }
+
+            .package-details {
+                ul li p {
+                    color: #B2ADE1;
+                    span {
+                        color: #FFF;
+                    }
+                }
+            }
+
+            .btn-feature {
+                margin-top: 35px;
+                padding: 17px 88px 18px 88px;
+                color: #000;
+                background-color: #FFBEB2;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    nav.navbar {
+        padding: 40px 90px;
+    }
+
+    section.feature {
+        .title {
+            font-size: 42px;
+        }
+
+        .card.left {
+            border-radius: 30px 0 0 30px;
+        }
+
+        .card.right {
+            border-radius: 0 30px 30px 0;
+
+        }
+
+        .package::before {
+            content: '';
+            position: absolute;
+            z-index: 20;
+            width: 438px;
+            height: 354px;
+            border-radius: 27px;
+            background: #6A7180;
+            opacity: 0.4;
+            filter: blur(200px);
+        }
+    }
+}
